@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josephina Iyambo">
+    <meta name="description" content="My personal portfolio website">
+    <title>Josephina Iyambo | Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- Main container div -->
+    <div class="container">
+
+        <!-- Header  -->
+        <div class="header">
+            <div class="sparkles" id="sparkles"></div>
+            <h1>✨ Welcome to My Portfolio ✨</h1>
+            <h2>👩🏾‍💻 Web Developer in Training</h2>
+            <h3>🌸 Code Blossom Academy Student 🌸</h3>
+        </div>
+
+        <!-- Profile image with text overlay -->
+        <div class="image-container">
+            <img src="images/josephina.png.jpg" alt="Josephina Iyambo" class="profile-image">
+            <div class="overlay-text">Hi, my name is Josephina</div>
+        </div>
+
+       
+        <div class="heading-demo">
+            <h4>My Learning Journey</h4>
+            <h5>Current Focus: HTML &amp; CSS</h5>
+            <h6>Future: JavaScript</h6>
+        </div>
+
+        <!-- About me -->
+        <div class="about-section">
+            <h2 class="toggle-heading" onclick="toggle('about')">About Me <span id="about-icon">▶</span></h2>
+            <div id="about" class="collapsible collapsed">
+                <p class="paragraph-box dotted-border">
+                    I am absolutely excited to learn HTML and CSS! This journey has just begun, 
+                    and I'm loving every moment of it.
+                </p>
+                <p class="paragraph-box dotted-border">
+                    I'm currently learning web development and can't wait to create amazing websites 
+                    that people will enjoy using.
+                </p>
+            </div>
+        </div>
+
+        <!-- Learning Journey -->
+        <div class="learning-section">
+            <h3 class="toggle-heading" onclick="toggle('learning')">My Learning Journey <span id="learning-icon">▶</span></h3>
+            <div id="learning" class="collapsible collapsed">
+                <p class="paragraph-box dotted-border">
+                    I am currently learning Web development with 
+                    <a href="https://code-blossom.notion.site/Full-Stack-Curriculum-10a5898ce27a80e893eac71505a95e63" target="_blank">
+                        Code Blossom Academy
+                    </a>.
+                </p>
+                <p class="paragraph-box dotted-border">
+                    I use resources like online tutorials, documentation, and forums to learn and 
+                    troubleshoot any issues I encounter.
+                </p>
+                <p class="paragraph-box dotted-border">
+                    I also plan to collaborate with other learners and developers to gain new 
+                    perspectives and insights.
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills  -->
+        <div class="skills-section">
+            <h3 class="toggle-heading" onclick="toggle('skills')">Skills I'm Learning <span id="skills-icon">▶</span></h3>
+            <div id="skills" class="collapsible collapsed">
+                <p class="paragraph-box">HTML5 - Building the structure of websites</p>
+                <p class="paragraph-box">CSS3 - Styling and making things beautiful</p>
+                <p class="paragraph-box">JavaScript - Coming soon!</p>
+                <p class="paragraph-box">Responsive Design - Making sites work on all devices</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects-section">
+            <h3 class="toggle-heading" onclick="toggle('projects')">Future Projects <span id="projects-icon">▶</span></h3>
+            <div id="projects" class="collapsible collapsed">
+                <p class="paragraph-box">
+                    <a href="https://yourportfoliolink.com" target="_blank">🌐 Personal Portfolio — Visit my portfolio website</a>
+                </p>
+                <p class="paragraph-box">Interactive web applications</p>
+                <p class="paragraph-box">Mobile-responsive designs</p>
+                <p class="paragraph-box">E-commerce site</p>
+                <p class="paragraph-box">Blog platform</p>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="contact-section">
+            <h3 class="toggle-heading" onclick="toggle('contact')">Let's Connect! <span id="contact-icon">▶</span></h3>
+            <div id="contact" class="collapsible collapsed">
+                <p class="paragraph-box">
+                    Check out my learning journey at 
+                    <a href="https://code-blossom.notion.site/Full-Stack-Curriculum-10a5898ce27a80e893eac71505a95e63" target="_blank">
+                        Code Blossom Academy
+                    </a>
+                </p>
+                <p class="paragraph-box">
+                    <a href="https://medium.com/@Josephinaiyambo" target="_blank">📝 Read my blogs on Medium</a>
+                </p>
+                <p class="paragraph-box">
+                    <a href="Resume.pdf" download>📄 Download My Resume</a>
+                </p>
+                <p class="paragraph-box">
+                    Follow my progress as I learn to code and build amazing things!
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="paragraph-box">&copy; 2025 Josephina Iyambo. All rights reserved.</p>
+        </div>
+
+    </div>
+<script>
+        // Collapse or expand 
+        function toggle(id) {
+            const section = document.getElementById(id);
+            const icon = document.getElementById(id + '-icon');
+            if (section && icon) {
+                if (section.classList.contains('collapsed')) {
+                    section.classList.remove('collapsed');
+                    icon.textContent = '▼';
+                } else {
+                    section.classList.add('collapsed');
+                    icon.textContent = '▶';
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
