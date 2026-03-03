@@ -240,7 +240,7 @@ a:hover {
     border-top: 3px solid #9b59b6;
 }
 
-/*responsive design*/
+/*for it to be responsive*/
 @media (max-width: 600px) {
     .container {
         padding: 15px;
@@ -263,4 +263,5 @@ a:hover {
     .paragraph-box {
         padding: 12px 15px;
     }
+
 }
